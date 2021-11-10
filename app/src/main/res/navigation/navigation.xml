@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@+id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.davydikes.rickandmorty.screen.main.FragmentMain"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/toCharacterDetails"
+            app:destination="@+id/characterDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/characterDetailsFragment"
+        android:name="com.davydikes.rickandmorty.screen.character_details.FragmentCharacterDetails"
+        android:label="CharacterDetailsFragment"
+        tools:layout="@layout/fragment_character_details">
+        <argument
+            android:name="characters"
+            app:argType="com.davydikes.rickandmorty.models.Characters"
+            app:nullable="true" />
+    </fragment>
+
+</navigation>

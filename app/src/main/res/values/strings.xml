@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RickAndMorty</string>
+    <string name="character_details">Character details</string>
+    <string name="watch_offline">Watch offline</string>
+    <string name="no_internet_connection">no internet connection</string>
+</resources>
